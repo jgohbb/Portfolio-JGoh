@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* General */
 body {
     background-image: url(../images/white.jpg);
 }
@@ -33,7 +34,6 @@ body {
 
 li {
     display: inline-block;
-    /* position: relative; */
     list-style: none;
     margin-left: 4px;
 }
@@ -127,8 +127,6 @@ img {
 .contact-title {
     float: left;
     clear: both;
-    /* margin: 0 auto; */
-    /* padding: 0; */
 }
 
 .logos-top {
@@ -156,14 +154,45 @@ label {
     padding: 8px 30px 8px 30px;
 }
 
+/* portfolio.html page elements */
+.work {
+    position: relative;
+    float: left;
+    width: 400px;
+    margin: 0 0 25px 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+  
+.work:nth-child(even) {
+    margin-right: 50px;
+}
+  
+.work img {
+    width: 100%;
+    border: 0 none;
+}
+  
+.work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 106%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 10px;
+    color: #ffffff;
+    text-align: center;
+    background:darkslategray;
+    border-bottom: 0;
+    opacity: 0.9;
+}
+  
 
-/* bio.html elements
-#bio-pic {
-    width: 300px;
-    max-width: 100%;
-    margin: 1% 2% 0 0;
-    float: left; */
-/* } */
+
+
+
+
+
 
 /* 
 font-family: 'Josefin Slab', serif;
