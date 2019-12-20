@@ -5,6 +5,9 @@
 /* General */
 body {
     background-image: url(../images/white.jpg);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar {
@@ -15,21 +18,23 @@ body {
     color: white;
     height: 100px;
     max-height: 100%;
-    width: 980px;
+    max-width: 980px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 0 15px 0;
+    margin-bottom: 30px;
 }
 .header {
-    font-size: 2em;
+    font-size: 70px;
     float: left;
 }
 #sub-title {
-    font-size: 0.2em;
+    font-size: 17px;
 }
 
 .links {
     float: right;
-    padding:30px 10px 0 0;
+    padding:40px 10px 0 0;
+    font-size: 17px;
 }
 
 li {
@@ -61,13 +66,11 @@ a:hover::before {
 .wrapper-content {
     font-family: 'Open Sans', sans-serif;
     color: darkslategray;
-    width: 980px;
-    height: 500px;
-    min-height: 100%;
+    max-width: 980px;
     margin: 0 auto;
     padding: 0;
     clear: both;
-    /* overflow: auto; */
+    min-height: calc(100vh - 100px);
 }
 
 h2 {
@@ -80,11 +83,13 @@ h2 {
 p {
     font-size: 130%;
     padding: 0;
+    margin: 0 0 22px 0;
+    line-height: 30px;
 }
 
 hr {
     border: 0.1px solid lavender;
-    margin: 0 0 20px 0;
+    margin: 10px 0 30px 0;
     clear: both;
 }
 
@@ -96,7 +101,7 @@ hr {
     color: white;
     height: 60px;
     max-height: 100%;
-    width: 980px;
+    max-width: 980px;
     margin: 0 auto;
     padding: 0 0 0 10px;
     /* position: fixed; */
@@ -116,11 +121,16 @@ img {
     margin: 1% 3% 1% 0;
     float: left;
 }
+#bio-pic {
+    width: 200px;
+}
+#chart {
+    width: 400px;
+}
 
 /* contact.html elements */
 .contact-top {
     clear: both;
-    overflow: auto;
     margin: 0 auto;
     padding: 0;
 }
@@ -133,7 +143,10 @@ img {
     float: right;
 }
 
-#name, #email, #textarea {
+#name, 
+#email, 
+#textarea, 
+#contact {
     font-weight: 300;
     width: 980px;
     margin: 5px 0 13px 0;
@@ -141,12 +154,13 @@ img {
     border-width: thin;
     padding: 5px 0 5px 0;
 }
+
 label {
     font-weight: bolder;
 }
 
 #submit {
-    background: darkslategray;;
+    background: darkslategray;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size: 90%;
@@ -187,6 +201,149 @@ label {
     opacity: 0.9;
 }
   
+@media only screen and (max-width: 1000px) {
+    .navbar, 
+    .wrapper-content, 
+    .logos, 
+    #name, 
+    #email, 
+    #textarea {
+        max-width: 900px;
+        margin: auto;
+    }
+    #name, 
+    #email, 
+    #textarea, 
+    #contact {
+        margin: 5px 0 10px 0;
+        padding: 5px 0 5px 0;
+    }
+    .work {
+        width: 400px;
+        margin: 0 0 10px 25px;
+    }
+    .navbar {
+        margin-bottom: 30px;
+    }
+
+} 
+
+@media only screen and (max-width: 810px) {
+    .navbar, 
+    .wrapper-content, 
+    .logos, 
+    #name, 
+    #email, 
+    #textarea {
+        max-width: 800px;
+        margin: auto;
+    }
+    #name, 
+    #email, 
+    #textarea, 
+    #contact {
+        margin: 5px 0 10px 0;
+        padding: 5px 0 5px 0;
+    }
+    .work {
+        width: 400px;
+        margin: 0 0 10px 25px;
+    }
+    .navbar {
+        margin-bottom: 30px;
+    }
+    .links {
+        clear: both;
+        float: left;
+        font-size: 17px;
+        padding:10px 0 0 0;
+    }
+    #chart {
+        width: 300px;
+    }
+} 
+@media only screen and (max-width: 770px) {
+    .navbar, 
+    .wrapper-content, 
+    .logos, 
+    #name, 
+    #email, 
+    #textarea {
+        max-width: 700px;
+        margin: auto;
+    }
+    #name, 
+    #email, 
+    #textarea, 
+    #contact {
+        margin: 5px 0 10px 0;
+        padding: 5px 0 5px 0;
+    }
+    .work {
+        width: 400px;
+        margin: 0 0 10px 25px;
+    }
+    .navbar {
+        margin-bottom: 28px;
+    }
+    p {
+        font-size: 110%;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .links {
+        clear: both;
+        float: left;
+        font-size: 15px;
+        padding:10px 0 0 0;
+    }
+} 
+
+@media only screen and (max-width: 600px) {
+    .navbar, 
+    .wrapper-content, 
+    .logos, 
+    #name, 
+    #email, 
+    #textarea {
+        max-width: 550px;
+        margin: auto;
+    }
+    #name, 
+    #email, 
+    #textarea, 
+    #contact {
+        margin: 5px 0 10px 0;
+        padding: 5px 0 5px 0;
+    }
+    .work {
+        width: 400px;
+        margin: 0 0 10px 25px;
+    }
+    .navbar {
+        height: 80px;
+        margin-bottom: 25px;
+    }
+    p {
+        font-size: 100%;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .links {
+        clear: both;
+        float: left;
+        font-size: 15px;
+        padding:10px 0 0 0;
+    }
+    .header {
+        font-size: 50px;
+    }
+    #sub-title {
+        font-size: 15px;
+
+}
 
 
 
