@@ -141,6 +141,8 @@ img {
 
 .logos-top {
     float: right;
+    padding: 0;
+    margin: 0 auto;
 }
 
 #name, 
