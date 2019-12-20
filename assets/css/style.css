@@ -62,7 +62,7 @@ a:hover::before {
     font-family: 'Open Sans', sans-serif;
     color: darkslategray;
     width: 980px;
-    height: 700px;
+    height: 500px;
     min-height: 100%;
     margin: 0 auto;
     padding: 0;
@@ -80,8 +80,8 @@ h2 {
 p {
     font-size: 130%;
     padding: 0;
-    /* margin-left: 20px; */
 }
+
 hr {
     border: 0.1px solid lavender;
     margin: 0 0 20px 0;
@@ -96,7 +96,7 @@ hr {
     color: white;
     height: 60px;
     max-height: 100%;
-    width: 960px;
+    width: 980px;
     margin: 0 auto;
     padding: 0 0 0 10px;
     /* position: fixed; */
