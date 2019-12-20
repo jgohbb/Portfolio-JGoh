@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/white.jpg);
+}
+
+.navbar {
+    clear: both;
+    display: block;
+    background-color:darkslategray;
+    font-family:'Josefin Sans', sans-serif;
+    color: white;
+    height: 100px;
+    max-height: 100%;
+    width: 980px;
+    margin: 0 auto;
+    padding: 0;
+}
+.header {
+    font-size: 2em;
+    float: left;
+}
+#sub-title {
+    font-size: 0.2em;
+}
+
+.links {
+    float: right;
+    padding:30px 10px 0 0;
+}
+
+li {
+    display: inline-block;
+    /* position: relative; */
+    list-style: none;
+    margin-left: 4px;
+}
+
+#home, #bio, #portfolio { 
+    border-right-color: rgb(211, 214, 213);
+    border-right-style: solid;
+    border-width: thin;
+    padding-right: 4px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+.wrapper-content {
+    font-family: 'Open Sans', sans-serif;
+    color: darkslategray;
+    width: 980px;
+    height: 700px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    clear: both;
+    /* overflow: auto; */
+}
+
+h2 {
+    clear: both;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 130%;
+    padding: 0;
+    /* margin-left: 20px; */
+}
+hr {
+    border: 0.1px solid lavender;
+    margin: 0 0 20px 0;
+    clear: both;
+}
+
+.logos {
+    clear: both;
+    display: block;
+    background-color:darkslategray;
+    font-family:'Josefin Sans', sans-serif;
+    color: white;
+    height: 60px;
+    max-height: 100%;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 0 0 10px;
+    /* position: fixed; */
+}
+
+img {
+    width: 25px;
+    height: auto;
+    margin: 18px 12px 0 10px;
+    box-shadow: 2px 2px 8px cyan;
+}
+
+/* home.html elements */
+#chart, #bio-pic {
+    width: 200px;
+    max-width: 100%;
+    margin: 1% 3% 1% 0;
+    float: left;
+}
+
+/* contact.html elements */
+.contact-top {
+    clear: both;
+    overflow: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+.contact-title {
+    float: left;
+    clear: both;
+    /* margin: 0 auto; */
+    /* padding: 0; */
+}
+
+.logos-top {
+    float: right;
+}
+
+#name, #email, #textarea {
+    font-weight: 300;
+    width: 980px;
+    margin: 5px 0 13px 0;
+    border-color: darkslategray;
+    border-width: thin;
+    padding: 5px 0 5px 0;
+}
+label {
+    font-weight: bolder;
+}
+
+#submit {
+    background: darkslategray;;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 90%;
+    font-weight: bold;
+    padding: 8px 30px 8px 30px;
+}
+
+
+/* bio.html elements
+#bio-pic {
+    width: 300px;
+    max-width: 100%;
+    margin: 1% 2% 0 0;
+    float: left; */
+/* } */
+
+/* 
+font-family: 'Josefin Slab', serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Josefin Sans', sans-serif; */
