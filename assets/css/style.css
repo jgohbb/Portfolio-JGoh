@@ -136,7 +136,7 @@ img {
     clear: both;
     margin: 0 auto;
     padding: 0;
-    display: inline-block;
+    display: block;
 }
 .contact-title {
     float: left;
@@ -153,10 +153,8 @@ img {
 #contact {
     font-weight: 300;
     width: 980px;
-    margin: 5px 0 13px 0;
-    border-color: darkslategray;
-    border-width: thin;
-    padding: 5px 0 5px 0;
+    margin: 10px 0 13px 0;
+    padding: 10px 0 10px 10px;
 }
 
 label {
