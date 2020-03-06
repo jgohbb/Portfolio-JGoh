@@ -3,9 +3,8 @@
     error_reporting( E_ALL );
     $from = $_POST['from'];
     $to = "jgoh1994@gmail.com";
-    $subject = $_POST['subject'];
     $message = $_POST['message'];
     $headers = "From:" . $from;
-    mail($to, $subject, $message, $headers);
+    mail($to, $message, $headers);
     echo "message was sent";
 ?>
