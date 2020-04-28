@@ -91,9 +91,23 @@ p {
     line-height: 30px;
 }
 
+#email {
+    font-size: 100%;
+    font-style: italic ;
+    padding: 0;
+    margin: 0;
+}
+
+#info {
+    font-size: 100%;
+    font-style: italic ;
+    padding: 0;
+    margin: 0;
+}
+
 hr {
     border: 0.1px solid lavender;
-    margin: 10px 0 30px 0;
+    margin: 10px 0 20px 0;
     clear: both;
 }
 
